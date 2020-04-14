@@ -48,7 +48,7 @@
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-middleware": "^3.3.0",
-    "webpack-dev-server": "^3.1.8",
+    "webpack-dev-server": "^3.1.11",
     "webpack-hot-middleware": "^2.23.1",
     "what-input": "^5.1.3"
   }
