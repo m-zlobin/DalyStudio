@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('../fonts/inconsolata/inconsolataregular.woff2') format('woff2');
+    src: url('../fonts/inconsolata/inconsolataregular.woff2') format('woff2'), url('../fonts/inconsolata/inconsolataregular.woff') format('woff'), url('../fonts/inconsolata/inconsolataregular.ttf') format('truetype'), url('../fonts/inconsolata/inconsolataregular.eot') format('embedded-opentype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal; unicode-range: U+20-7E;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/montserratregular.woff2');
+    src: url('../fonts/montserrat/montserratregular.woff2') format('woff2'), url('../fonts/montserrat/montserratregular.woff') format('woff'), url('../fonts/montserrat/montserratregular.ttf') format('truetype'), url('../fonts/montserrat/montserratregular.eot') format('embedded-opentype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+20-7E;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/opensansregular.woff2');
+    src: url('../fonts/opensans/opensansregular.woff2') format('woff2'), url('../fonts/opensans/opensans.woff') format('woff'), url('../fonts/opensans/opensans.ttf') format('truetype'), url('../fonts/opensans/opensansregular.eot') format('embedded-opentype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+20-7E;
+}
+

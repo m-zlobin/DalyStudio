@@ -1,0 +1,19 @@
+.u-object-fit-cover {
+    @include object-fit(cover);
+}
+
+.u-object-fit-contain {
+    @include object-fit(contain);
+}
+
+.u-object-fit-fill {
+    @include object-fit(fill);
+}
+
+.u-object-fit-none {
+    @include object-fit(none);
+}
+
+.u-object-fit-scale-down {
+    @include object-fit(scale-down);
+}

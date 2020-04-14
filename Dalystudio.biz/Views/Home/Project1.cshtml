@@ -1,0 +1,211 @@
+﻿@{
+    ViewData["Title"] = "Tom and Olivia|Daly Studio";
+    ViewData["Description"] = "Magic and sunny beach wedding photos ideas for those who are planning a wedding or looking for a professional wedding photographer.";
+}
+@section metatags
+{
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@ViewData["Title"]" />
+    <meta property="og:description" content="@ViewData["Description"]" />
+    <meta property="og:url" content="@($"https://{Context.Request.Host}{Url.RouteUrl("Project1")}")" />
+    <meta property="og:image" content="@($"https://{Context.Request.Host}/img/dalystudio.jpg")" />
+    <meta property="og:image:width" content="1250" />
+    <meta property="og:image:height" content="656" />
+
+    <meta name="description" content="We know answers to all your queries. Find the info you require or get in touch with us if you haven't found what you were looking for." />
+
+}
+@section links
+    {
+    <link rel="canonical" href="@($"https://{Context.Request.Host}{Url.RouteUrl("Project1")}")" />
+}
+
+@section criticalCSS
+{
+    <style>
+        @@font-face{font-family:et-line;src:url(/dist/fonts/et-line.eot);src:url(/dist/fonts/et-line.eot) format("embedded-opentype"),url(/dist/fonts/et-line.woff2) format("woff2"),url(/dist/fonts/et-line.woff) format("woff"),url(/dist/fonts/et-line.ttf) format("truetype");font-weight:400;font-style:normal;font-display:swap}[class^=icon-]:before{font-family:et-line;font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-map-pin:before{content:"\E803"}.icon-phone:before{content:"\E804"}.icon-envelope:before{content:"\E805"}.icon-magnifying-glass:before{content:"\E80C"}.icon-angle-double-up:before{content:"\F102"}.icon-angle-down:before{content:"\F107"}@@font-face{font-family:Inconsolata;src:url(/dist/fonts/inconsolataregular.woff2) format("woff2");src:url(/dist/fonts/inconsolataregular.woff2) format("woff2"),url(/dist/fonts/inconsolataregular.woff) format("woff"),url(/dist/fonts/inconsolataregular.ttf) format("truetype"),url(/dist/fonts/inconsolataregular.eot) format("embedded-opentype");font-weight:400;font-style: normal; unicode-range: U+20-7E; font-display: swap;}@@font-face{font-family:Montserrat;src:url(/dist/fonts/montserratregular.woff2);src:url(/dist/fonts/montserratregular.woff2) format("woff2"),url(/dist/fonts/montserratregular.woff) format("woff"),url(/dist/fonts/montserratregular.ttf) format("truetype"),url(/dist/fonts/montserratregular.eot) format("embedded-opentype");font-weight:400;font-style: normal; unicode-range: U+20-7E; font-display: swap;}@@font-face{font-family:Open Sans;src:url(/dist/fonts/opensansregular.woff2);src:url(/dist/fonts/opensansregular.woff2) format("woff2"),url(/dist/fonts/opensans.woff) format("woff"),url(/dist/fonts/opensans.ttf) format("truetype"),url(/dist/fonts/opensansregular.eot) format("embedded-opentype"),;font-weight:400;font-style: normal; unicode-range: U+20-7E; font-display: swap;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}main,nav,section{display:block}a{background-color:transparent}strong{font-weight:700}h1{margin:.67em 0;font-size:2em}img{border:0}hr{height:0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}button{margin:0;font:inherit;color:inherit}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{padding:0;border:0}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}button{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}img{vertical-align:middle}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}h1,h3{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1,h3{margin-top:20px;margin-bottom:10px}h1{font-size:36px}h3{font-size:24px}p{margin:0 0 10px}ul{margin-top:0;margin-bottom:10px}ul ul{margin-bottom:0}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@@media (min-width:768px){.container{width:750px}}@@media (min-width:992px){.container{width:970px}}@@media (min-width:1200px){.container{width:1170px}}.row{margin-right:-15px;margin-left:-15px}.col-sm-4,.col-sm-6{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@@media (min-width:768px){.col-sm-4,.col-sm-6{float:left}.col-sm-6{width:50%}.col-sm-4{width:33.33333333%}.col-sm-offset-3{margin-left:25%}}.collapse{display:none}.dropdown{position:relative}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;font-size:14px;text-align:left;list-style:none;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);border-radius:4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175)}.dropdown-menu>li>a{display:block;padding:3px 20px;clear:both;font-weight:400;line-height:1.42857143;color:#333;white-space:nowrap}@@media (min-width:768px){.navbar-right .dropdown-menu{right:0;left:auto}}.nav{padding-left:0;margin-bottom:0;list-style:none}.nav>li,.nav>li>a{position:relative;display:block}.nav>li>a{padding:10px 15px}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}@@media (min-width:768px){.navbar{border-radius:4px}}@@media (min-width:768px){.navbar-header{float:left}}.navbar-collapse{padding-right:15px;padding-left:15px;overflow-x:visible;-webkit-overflow-scrolling:touch;border-top:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 hsla(0,0%,100%,.1);box-shadow:inset 0 1px 0 hsla(0,0%,100%,.1)}@@media (min-width:768px){.navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.navbar-fixed-top .navbar-collapse{padding-right:0;padding-left:0}}.navbar-fixed-top .navbar-collapse{max-height:340px}@@media (max-device-width:480px) and (orientation:landscape){.navbar-fixed-top .navbar-collapse{max-height:200px}}.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}@@media (min-width:768px){.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}}.navbar-fixed-top{position:fixed;right:0;left:0;z-index:1030}@@media (min-width:768px){.navbar-fixed-top{border-radius:0}}.navbar-fixed-top{top:0;border-width:0 0 1px}.navbar-brand{float:left;height:50px;padding:15px;font-size:18px;line-height:20px}@@media (min-width:768px){.navbar>.container .navbar-brand{margin-left:-15px}}.navbar-toggle{position:relative;float:right;padding:9px 10px;margin-top:8px;margin-right:15px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@@media (min-width:768px){.navbar-toggle{display:none}}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-left-radius:0;border-top-right-radius:0}@@media (min-width:768px){.navbar-right{float:right!important;margin-right:-15px}}.container:after,.container:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.row:after,.row:before{display:table;content:" "}.container:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.row:after{clear:both}@@-ms-viewport{width:device-width}.navbar-brand,.navbar-nav>li>a{text-shadow:0 1px 0 hsla(0,0%,100%,.25)}.navbar-fixed-top{border-radius:0}button::-moz-focus-inner{padding:0;border:0}html{overflow-y:scroll;overflow-x:hidden;-ms-overflow-style:scrollbar}body{background:#fff;font:400 12px/1.8 Open Sans,Verdana,sans-serif;color:#666;-webkit-font-smoothing:antialiased}img{max-width:100%;height:auto}::-webkit-selection{background:#000;color:#fff}.navbar-custom .dropdown-menu{-webkit-box-shadow:none;box-shadow:none}.bg-dark,.bg-dark-50,.bg-dark-50 .module-title,.bg-dark .module-title{color:#fff}.bg-dark{background:#111}.bg-dark-50:before{position:absolute;content:" ";height:100%;width:100%;left:0;top:0}.bg-dark-50:before{background:rgba(0,0,0,.5)}a{color:#000}h1,h3{line-height:1.4;font-weight:400}p,ul{margin:0 0 20px}.font-alt{font-family:Montserrat,sans-serif}.font-alt,.font-inc{text-transform:uppercase;letter-spacing:.1em}.font-inc{font-family:Inconsolata,sans-serif}.align-center{text-align:center}.navbar-custom{background:#fff;border:0;border-color:#f5f5f5!important;border-bottom:1px solid #f5f5f5!important;border-radius:0;font-family:Inconsolata,sans-serif;text-transform:uppercase;letter-spacing:.15em;font-size:13px;z-index:1000}.navbar-custom .dropdown-menu{background:#fff;border:1px solid #f5f5f5;border-radius:0;padding:0;-webkit-box-shadow:none;box-shadow:none}.navbar-custom .navbar-brand{font-family:Montserrat,sans-serif;letter-spacing:.1em;font-weight:400;font-size:20px;color:#000}.navbar-custom .nav li>a{position:relative;color:#000}.navbar-custom .dropdown-menu>li>a{border-bottom:1px solid #f5f5f5!important;padding:11px 15px;letter-spacing:.15em;font-size:11px;color:#666}.navbar-custom .dropdown-menu>li:last-child>a{border:0!important}.navbar-custom .dropdown-toggle:after{position:absolute;display:block;right:0;top:50%;margin-top:-5px;font-size:9px;content:"\F107";text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.navbar-custom .navbar-nav>.dropdown>.dropdown-toggle{padding-right:28px}.navbar-custom .navbar-nav>.dropdown>.dropdown-toggle:after{position:absolute;display:block;right:15px;top:50%;margin-top:-5px;font-size:9px;content:"\F107";text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.navbar-custom .navbar-toggle .icon-bar{background:#000}.wrapper{position:relative;background:#fff;z-index:1}.module,.module-header,.module-small{position:relative;padding:140px 0;background-repeat:no-repeat;background-position:50% 50%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}.module-small{padding:70px 0}.module-title{position:relative;margin:0 0 70px;letter-spacing:.15em;font-size:30px;color:#000}.module-subtitle{margin-bottom:70px;font-size:12px}.module-title+.module-subtitle{margin-top:-35px}.divider-w{border-top:1px solid #f5f5f5;margin:0}.content-box{text-align:center;margin:25px 0}.content-box-icon{font-size:36px}.content-box-title{margin:5px 0 0;font-size:14px}.works-grid{list-style:none;padding:0;margin:0}.work-item{width:50%;float:left;margin:0}.works-grid-3 .work-item{width:33.333%}.work-item>a{display:block}.work-image,.work-item>a{position:relative;overflow:hidden}.work-image img{display:block;overflow:hidden;width:100%}.work-image:after{display:block;content:"";height:100%;top:0}.work-caption,.work-image:after{position:absolute;width:100%;left:0}.work-caption{padding:0 20px;opacity:0;bottom:100%;text-align:center;overflow:hidden}.work-title{font-size:18px;color:#fff;margin:0 0 6px}.works-grid.works-hover-w .work-title{color:#fff}.work-details{margin:0 0 20px}.work-details-title{color:#000;margin:0 0 20px}.work-details ul{list-style:none;padding:0;margin:0}.work-details ul>li{margin:0 0 10px}.work-title>span{font-size:31px}.scroll-up{position:fixed;display:none;bottom:80px;right:7px;z-index:999}.scroll-up a{background:#ddd;display:block;height:28px;width:28px;text-align:center;line-height:28px;font-size:14px;color:#000;opacity:.6;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px}@@media (min-width:768px){.navbar-transparent{background:transparent;border:0!important;border-color:#f5f5f5!important;padding-bottom:15px;padding-top:15px}.navbar-transparent .navbar-brand,.navbar-transparent .nav li>a{color:#fff}.navbar-transparent .dropdown-menu>li>a{color:#666}.navbar-custom .dropdown-menu{position:absolute;display:block;visibility:hidden;opacity:0}.navbar-right .dropdown-menu{right:auto;left:0}}@@media (max-width:991px){.work-item,.works-grid-3 .work-item{width:50%}}@@media (max-width:767px){.navbar-custom .navbar-nav{margin-top:0;margin-bottom:0}.navbar-custom li a{border-bottom:1px solid #f5f5f5!important}.navbar-custom .dropdown-toggle:after,.navbar-custom .navbar-nav>.dropdown>.dropdown-toggle:after{right:7px;content:"\F107"}.navbar-custom .navbar-collapse{border-top:1px solid #f5f5f5;-webkit-box-shadow:none;box-shadow:none}}@@media only screen and (max-width:480px){.work-item,.works-grid-3 .work-item{width:100%}}.module,.module-small{padding:70px 0}.module-header{padding:190px 0 140px}.module-subtitle{margin-bottom:45px}@@media (max-width:479px){.module,.module-small{padding:45px 0}.module-header{padding:190px 0 140px}.module-subtitle{margin-bottom:30px}}.navbar-custom .navbar-nav>.dropdown>.dropdown-toggle:after{display:none}li.dropdown a,li.dropdown a+div{display:inline-block}li.dropdown a+div{padding-right:10px;width:30px;padding-left:0}li.dropdown>a{padding-right:0}li.dropdown .arrow i{color:#fff;width:20px;height:20px;padding:2px 5px}li.dropdown .arrow{margin-left:-8px;width:30px}li.dropdown ul a{width:100%}li.dropdown:not(.open) ul{visibility:hidden;opacity:0}li.dropdown i:before{content:"\F107"}@@media (max-width:767px){li.dropdown .arrow i{color:#000}li.dropdown a{border-bottom:unset!important;width:90%}li.dropdown div{padding:8px 10px}li.dropdown{border-bottom:1px solid #f5f5f5}li.dropdown a+div{float:right;width:40px;padding-right:0}li.dropdown .arrow{margin-left:0}li.dropdown ul{border-top:1px solid #f5f5f5!important}li.dropdown ul>li:last-child>a{border-bottom:0!important}}@@media (max-width:479px){li.dropdown a{width:85%}}#works-grid{overflow:hidden}.p-t-20{padding-top:20px!important}.p-b-0{padding-bottom:0!important}@@media (max-width:767px){.p-t-sm-0{padding-top:0!important}}
+    </style>
+}
+
+<div class="wrapper">
+
+    <!-- HOME -->
+    <section class="module module-header bg-dark bg-dark-50 lazyload" data-bg="../img/wedding/main.jpg">
+
+        <div class="container">
+
+            <!-- MODULE TITLE -->
+            <div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+
+                    <h1 class="module-title font-alt align-center">TOM & OLIVIA</h1>
+
+                    <div class="module-subtitle font-inc align-center">
+                        'Once in awhile, right in the middle of an ordinary life, love gives us a fairy tale.'
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /MODULE TITLE -->
+
+        </div>
+
+    </section>
+    <!-- /HOME -->
+    <!-- PORTFOLIO DESCRIPTION -->
+    <section class="module-small">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                    <div class="work-details">
+                        <h3 class="work-details-title font-alt">DESCRIPTION</h3>
+                        <ul>
+                            <li class="font-inc"><strong>Customer: </strong>Tom and Olivia Johnson</li>
+                            <li class="font-inc"><strong>Date: </strong>14.08.2017</li>
+                            <li class="font-inc"><strong>Price: </strong>$2880</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                    <p>Tom and Olivia magic Florida wedding at the seaside. They are are so young, romantic, and bond each other, I think beach wedding was the best choice for them. There was so much love and tenderness during the whole day...it was a great pleasure to be their wedding photographer.</p>
+                    <p>The main part of the day was to be at Johnsons' family home, and that’s where I started with some bridal prep photography. Then, ceremony photos at the church, and the rest of the day we spent at the beach where the reception took place. It was an incredible day, weather-wise, and the sun gods surely looked down on Tom and Olivia. Tom and Olivia's package included 6 hours photography, 70 photos photo editing, a wedding photo book.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- /PORTFOLIO DESCRIPTION -->
+    <!-- PORTFOLIO -->
+    <section class="module-small p-t-20 p-b-0 p-t-sm-0">
+
+
+        <!-- PORTFOLIO LIST -->
+        <ul id="works-grid" class="works-grid works-grid-masonry works-grid-3 works-hover-w">
+
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item">
+                <a href="../img/wedding/cover.jpg" class="popup" title="Wedding 1">
+                    <div class="work-image">
+                        <picture>
+                            <source type="image/webp" data-srcset="../img/wedding/cover.webp">
+                            <img data-src="../img/wedding/cover.jpg" alt="Wedding 1" class="lazyload">
+                        </picture>
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">
+                            <span class="icon-magnifying-glass"></span>
+                        </h3>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item">
+                <a href="../img/wedding/1.jpg" class="popup" title="Wedding 2">
+                    <div class="work-image">
+                        <picture>
+                            <source type="image/webp" data-srcset="../img/wedding/1.webp">
+                            <img data-src="../img/wedding/1.jpg" alt="Wedding 2" class="lazyload">
+                        </picture>
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">
+                            <span class="icon-magnifying-glass"></span>
+                        </h3>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item">
+                <a href="../img/wedding/5.jpg" class="popup" title="Wedding 3">
+                    <div class="work-image">
+                        <picture>
+                            <source type="image/webp" data-srcset="../img/wedding/5.webp">
+                            <img data-src="../img/wedding/5.jpg" alt="Wedding 3" class="lazyload">
+                        </picture>
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">
+                            <span class="icon-magnifying-glass"></span>
+                        </h3>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item">
+                <a href="../img/wedding/3.jpg" class="popup" title="Wedding 4">
+                    <div class="work-image">
+                        <picture>
+                            <source type="image/webp" data-srcset="../img/wedding/3.webp">
+                            <img data-src="../img/wedding/3.jpg" alt="Wedding 4" class="lazyload">
+                        </picture>
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">
+                            <span class="icon-magnifying-glass"></span>
+                        </h3>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item">
+                <a href="../img/wedding/4.jpg" class="popup" title="Wedding 5">
+                    <div class="work-image">
+                        <picture>
+                            <source type="image/webp" data-srcset="../img/wedding/4.webp">
+                            <img data-src="../img/wedding/4.jpg" alt="Wedding 5" class="lazyload">
+                        </picture>
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">
+                            <span class="icon-magnifying-glass"></span>
+                        </h3>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item">
+                <a href="../img/wedding/2.jpg" class="popup" title="Wedding 6">
+                    <div class="work-image">
+                        <picture>
+                            <source type="image/webp" data-srcset="../img/wedding/2.webp">
+                            <img data-src="../img/wedding/2.jpg" alt="Wedding 6" class="lazyload">
+                        </picture>
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">
+                            <span class="icon-magnifying-glass"></span>
+                        </h3>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+        </ul>
+        <!-- /PORTFOLIO LIST -->
+
+    </section>
+    <!-- /PORTFOLIO -->
+ 
+    <!-- DIVIDER -->
+    <hr class="divider-w">
+    <!-- /DIVIDER -->
+
+    <partial name="_Footer" />
+
+</div>
+<!-- /WRAPPER -->

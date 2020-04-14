@@ -1,0 +1,249 @@
+/* ------------------------------------------------------------------
+Button styles
+------------------------------------------------------------------- */
+
+.btn {
+    padding: 8px 37px;
+    font-family: "Inconsolata", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+}
+
+.btn.focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0;
+}
+
+.btn.btn-round {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.btn.btn-circle {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+/* Button colors */
+
+.btn.btn-g {
+    background: transparent;
+    border: 1px solid #b2b2b2;
+    color: #666;
+}
+
+.btn.btn-g:hover,
+.btn.btn-g:focus {
+    background: #b2b2b2;
+    color: #fff;
+}
+
+.btn.btn-border-d {
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.btn.btn-border-d:hover,
+.btn.btn-border-d:focus {
+    background: #000;
+    color: #fff;
+}
+
+.btn.btn-d {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.btn.btn-d:hover,
+.btn.btn-d:focus {
+    background: #000;
+    color: #fff;
+}
+
+/* Button sizes */
+
+.btn.btn-lg {
+    padding: 12px 45px;
+    font-size: 13px;
+}
+
+.btn.btn-sm {
+    padding: 6px 25px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.btn.btn-xs {
+    padding: 4px 19px;
+    font-size: 10px;
+    letter-spacing: 0;
+}
+
+.btn-list .btn {
+    margin: 5px 0;
+}
+
+
+.scroll-up {
+    position: fixed;
+    display: none;
+    bottom: 7px;
+    right: 7px;
+    z-index: 999;
+}
+
+.scroll-up a {
+    background: #fff;
+    display: block;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    color: #000;
+    opacity: 0.6;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.scroll-up a:hover,
+.scroll-up a:active {
+    opacity: 1;
+    color: #000;
+}
+
+
+/*.btn {
+  cursor: pointer;
+  transition: .3s;
+  text-transform: capitalize;
+  font-family: $secondary-font;
+  font-weight: $btn-font-weight;
+  font-size: 18px !important;
+  padding: $btn-padding;
+	&:focus {
+		box-shadow: none;
+	}
+}
+.fonts-loaded-1 .btn {
+    font-family: $secondary-font-loaded-1;
+}
+.fonts-loaded-2 .btn {
+    font-family: $secondary-font-loaded-2;
+}
+
+.btn-rounded {
+  border-radius:$btn-border-radius;
+}
+
+.btn-primary {
+  background: $color-primary;
+  box-shadow: 0 5px 40px 0 rgba(#0081FF, .30);
+  color: #fff;
+  &:hover{
+    background: darken($color-primary, 5%);
+    box-shadow: none;
+  }
+}
+
+.btn-white {
+  background: #fff;
+  box-shadow: 0 5px 40px 0 rgba(#2065a9, .20);
+  color: #597187 !important;
+  &:hover{
+    background: darken(#597187, 10%);
+    color: #fff !important;
+  }
+}
+.btn-outline-white {
+	background-color: transparent;
+	background-image: none;
+	border-color: #597187;
+  &:hover{
+    background: darken(#597187, 10%);
+    color: #fff !important;
+  }
+}
+
+.btn-pulple-light {
+	background: #a282e3;
+	color: #fff;
+	box-shadow: 0 5px 40px 0 rgba(#A282E3, .40);
+	&:hover {
+		background: darken(#a282e3, 10%);
+		color: #fff;
+	}
+}
+.btn-outline-pulple-light{
+	background:transparent;
+	border-color:#a282e3;
+	&:hover {
+		background: #a282e3;
+		color: #fff;
+	}
+}
+
+.btn-yellow {
+  background: #ffad00;
+  box-shadow: 0 5px 40px 0 rgba(#FFAD00, .30);
+  color: #fff !important;
+  &:hover{
+    background: darken(#ffad00, 5%);
+    color: #fff;
+  }
+}
+
+.btn-outline-yellow {
+  background: transparent;
+	border-color: #ffad00;
+  &:hover{
+    background:#ffad00;
+    color: #fff;
+  }
+}
+
+
+.btn-green {
+  background: #2cd44a;
+  box-shadow: 0 5px 40px 0 rgba(#2cd44a, .30);
+  color: #fff !important;
+  &:hover{
+    background: darken(#2cd44a, 5%);
+    color: #fff;
+  }
+}
+
+
+.btn-red {
+  background: #f64d62;
+  box-shadow: 0 5px 40px 0 rgba(#f64d62, .30);
+  color: #fff !important;
+  &:hover{
+    background: darken(#f64d62, 5%);
+    color: #fff;
+  }
+}
+
+.btn-outline-green {
+  background:transparent;
+	border-color: #2cd44a;
+  &:hover{
+    background: darken(#2cd44a, 5%);
+    color: #fff;
+  }
+}
+.btn-sm {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 14px !important;
+}*/

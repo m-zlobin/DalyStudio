@@ -1,0 +1,308 @@
+@import url("slider.css");
+@import url("vertical.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
+
+/* ------------------------------------------------------------------
+General Styles
+------------------------------------------------------------------- */
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: scrollbar;
+}
+
+body {
+    background: #fff;
+    font: 400 12px/1.8 "Open Sans", Verdana, sans-serif;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    border: 0;
+}
+
+.leftauto {
+    right: 0 !important;
+    left: auto !important;
+}
+
+/* Selection */
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background: #000;
+    color: #fff;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+/* Transition elsements */
+
+.form-control,
+.navbar-custom,
+.navbar-custom .navbar-brand {
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+a,
+.btn,
+.navbar a {
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    transition: all 0.125s ease-in-out 0s;
+}
+
+.team-detail,
+.team-image:after,
+.work-caption,
+.work-image > img,
+.work-image:after {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* Reset border-radius */
+
+.well,
+.label,
+.alert,
+.progress,
+.form-control,
+.modal-content,
+.panel-heading,
+.panel-group .panel,
+.nav-tabs > li > a,
+.nav-pills > li > a {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/* Reset box-shadow */
+
+.btn,
+.well,
+.panel,
+.progress,
+.progress-bar,
+.form-control,
+.form-control:hover,
+.form-control:focus,
+.navbar-custom .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*body {
+    font-family: $primary-font;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $base-font-color;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+.fonts-loaded-1 body{
+    font-family: $primary-font-loaded-1;
+}
+.fonts-loaded-2 body{
+    font-family: $primary-font-loaded-2;
+}
+
+[data-whatintent='mouse'] *:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $heading-fonts;
+    color: $heading-color;
+    line-height: $heading-line-height;
+    font-weight: $heading-font-weight;
+}
+
+.fonts-loaded-1 h1,
+.fonts-loaded-1 h2,
+.fonts-loaded-1 h3,
+.fonts-loaded-1 h4,
+.fonts-loaded-1 h5,
+.fonts-loaded-1 h6,
+.fonts-loaded-1 .h1,
+.fonts-loaded-1 .h2,
+.fonts-loaded-1 .h3,
+.fonts-loaded-1 .h4,
+.fonts-loaded-1 .h5,
+.fonts-loaded-1 .h6 {
+    font-family: $secondary-font-loaded-1;
+}
+
+.fonts-loaded-2 h1,
+.fonts-loaded-2 h2,
+.fonts-loaded-2 h3,
+.fonts-loaded-2 h4,
+.fonts-loaded-2 h5,
+.fonts-loaded-2 h6,
+.fonts-loaded-2 .h1,
+.fonts-loaded-2 .h2,
+.fonts-loaded-2 .h3,
+.fonts-loaded-2 .h4,
+.fonts-loaded-2 .h5,
+.fonts-loaded-2 .h6 {
+    font-family: $secondary-font-loaded-2;
+}
+
+
+h1, .h1 {
+    font-size: 40px;
+
+    @media (max-width:767px) {
+        font-size: 30px;
+    }
+}
+
+h2, .h2 {
+    font-size: 30px;
+
+    @media (max-width:767px) {
+        font-size: 28px;
+    }
+}
+
+h3, .h3 {
+    font-size: 26px;
+}
+
+h4, .h4 {
+    font-size: 24px;
+}
+
+h5, .h5 {
+    font-size: 22px;
+}
+
+h5, .h5 {
+    font-size: 20px;
+}
+
+a {
+    color: inherit;
+    transition: .3s;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: $primary-font;
+}
+.fonts-loaded-1 input,
+.fonts-loaded-1 optgroup,
+.fonts-loaded-1 select,
+.fonts-loaded-1 textarea {
+    font-family: $primary-font-loaded-1;
+}
+.fonts-loaded-2 input,
+.fonts-loaded-2 optgroup,
+.fonts-loaded-2 select,
+.fonts-loaded-2 textarea {
+    font-family: $primary-font-loaded-2;
+}
+
+textarea {
+    min-height: 60px;
+    max-height: 200px;
+}
+
+b, strong {
+    font-weight: $strong-font-weight;
+    color: #273f59;
+}
+
+sup {
+    top: -1.3em;
+}
+
+sub {
+    bottom: -1.3em;
+}
+
+section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+    z-index: 10;
+
+    @media (max-width:991px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+input, textarea {
+    border: 1px solid #e9eff5;
+    padding: 9px 30px;
+    border-radius: 4px;
+    width: 100%;
+
+    & {
+        @include placeholder(#8ea4b8);
+    }
+}
+
+@media(max-width:767px) {
+
+    .display-1 {
+        font-size: 4rem;
+    }
+
+    .display-2 {
+        font-size: 3.5rem;
+    }
+
+    .display-3 {
+        font-size: 3rem;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+i.fa {
+    line-height: inherit;
+}*/

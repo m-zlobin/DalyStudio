@@ -1,0 +1,93 @@
+/* ------------------------------------------------------------------
+Overlays
+------------------------------------------------------------------- */
+
+/* Dark background */
+
+.bg-dark,
+.bg-dark-30,
+.bg-dark-50,
+.bg-dark-90,
+.bg-dark .module-title,
+.bg-dark-30 .module-title,
+.bg-dark-50 .module-title,
+.bg-dark-90 .module-title {
+    color: #fff;
+}
+
+.bg-dark {
+    background: #111;
+}
+
+.bg-dark-30:before {
+    position: absolute;
+    background: rgba(0, 0, 0, .3);
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.bg-dark-50:before {
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.bg-dark-90:before {
+    position: absolute;
+    background: rgba(0, 0, 0, .9);
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* Light background */
+
+.bg-light,
+.bg-light-30,
+.bg-light-50,
+.bg-light-90 {
+    color: #000;
+}
+
+.bg-light {
+    background: rgba(234, 234, 234, 0.7);
+}
+
+.bg-light-30:before {
+    position: absolute;
+    background: rgba(255, 255, 255, .3);
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.bg-light-50:before {
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.bg-light-90:before {
+    position: absolute;
+    background: rgba(255, 255, 255, .9);
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}

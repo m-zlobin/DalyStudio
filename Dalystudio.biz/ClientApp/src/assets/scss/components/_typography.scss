@@ -1,0 +1,66 @@
+/* ------------------------------------------------------------------
+Typography
+------------------------------------------------------------------- */
+
+a {
+    color: #000;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #999;
+    outline: 0;
+}
+
+.bg-dark a {
+    color: #CDCDCD;
+}
+
+.bg-dark a:hover, .bg-dark a:focus {
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+p, ol, ul, blockquote {
+    margin: 0 0 20px;
+}
+
+blockquote {
+    border: 0;
+    font-style: italic;
+    font-size: 14px;
+    padding: 0;
+}
+
+.font-alt {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.font-inc {
+    font-family: "Inconsolata", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.font-serif {
+    font-family: Georgia, sans-serif;
+}
+
+.font-uppercase {
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.rotate {
+    text-shadow: none !important;
+}

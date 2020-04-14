@@ -1,0 +1,12 @@
+.nav-breadcrumb {
+    background-color: transparent;
+}
+
+.nav-breadcrumb ol.breadcrumb {
+    background-color: transparent;
+    margin: 0;
+
+    > li:hover {
+        color: #50b5ff
+    }
+}

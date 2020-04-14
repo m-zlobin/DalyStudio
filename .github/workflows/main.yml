@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Build
+      run: |
+        cd Dalystudio.biz
+        npm install && npm run publish_release
+    - name: Deploy
+      uses: AEnterprise/rsync-deploy@v1.0
+      env:
+        DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
+        ARGS: "-e -c -r --delete"
+        SERVER_PORT: ${{ secrets.SERVER_PORT }}
+        FOLDER: "Dalystudio.biz/bin/Release/netcoreapp2.1/publish/"
+        SERVER_IP: ${{ secrets.SERVER_IP }}
+        USERNAME: ${{ secrets.USERNAME }}
+        SERVER_DESTINATION: ${{ secrets.SERVER_DESTINATION }}
+    - name: Restart
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SERVER_SSH_KEY }}
+        port: ${{ secrets.SERVER_PORT }}
+        script: bash ${{ secrets.SERVER_SCRIPT }}

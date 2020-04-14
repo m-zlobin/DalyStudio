@@ -1,0 +1,33 @@
+
+/* ------------------------------------------------------------------
+Form styles
+------------------------------------------------------------------- */
+
+.form-control {
+    font-family: "Inconsolata", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+    height: 33px;
+    border: 1px solid #b2b2b2;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.form-control:focus {
+    border-color: #CACACA;
+}
+
+/* Form sizes */
+
+.input-lg,
+.form-horizontal .form-group-lg .form-control {
+    height: 43px;
+    font-size: 13px;
+}
+
+.input-sm, .form-horizontal .form-group-sm .form-control {
+    height: 29px;
+    font-size: 10px;
+}

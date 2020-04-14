@@ -1,0 +1,190 @@
+
+.module-hero {
+    position: relative;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    z-index: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hs-title-size-1 {
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
+
+.hs-title-size-2 {
+    letter-spacing: 0.2em;
+    font-size: 18px;
+}
+
+.hs-title-size-3 {
+    letter-spacing: 0.1em;
+    font-size: 28px;
+}
+
+.hs-title-size-4 {
+    letter-spacing: 0.2em;
+    font-size: 36px;
+}
+
+/* Video */
+
+.video-controls-box {
+    position: absolute !important;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.video-controls-box a {
+    visibility: hidden;
+    display: inline-block;
+    color: #fff;
+    margin: 0 5px 0 0;
+}
+
+/* -------------------------------------------------------------------
+Sections
+------------------------------------------------------------------- */
+
+.wrapper {
+    position: relative;
+    background: #fff;
+    z-index: 1;
+}
+
+.module,
+.module-small,
+.module-header {
+    position: relative;
+    padding: 140px 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.module-small {
+    padding: 70px 0;
+}
+
+.module-header {
+    padding: 190px 0 140px;
+}
+
+.col-bg {
+    background: rgba(255, 255, 255, .9);
+    padding: 140px 60px;
+}
+
+/* Module title */
+
+.module-title {
+    position: relative;
+    margin: 0 0 70px;
+    letter-spacing: 0.15em;
+    font-size: 30px;
+    color: #000;
+}
+
+.module-subtitle {
+    margin-bottom: 70px;
+    font-size: 12px;
+}
+
+.module-title + .module-subtitle {
+    margin-top: -35px;
+}
+
+/* Sections dividers */
+
+.divider-w {
+    border-top: 1px solid #f5f5f5;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------
+Social list
+------------------------------------------------------------------- */
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-list > li {
+    display: inline-block;
+    font-size: 24px;
+    margin: 5px 5px 5px 0;
+}
+
+/* ------------------------------------------------------------------
+Content boxes
+------------------------------------------------------------------- */
+
+.content-box {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.content-box-icon {
+    font-size: 36px;
+}
+
+.content-box-title {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.content-box-text {
+    margin: 15px 0 0;
+}
+
+/* ------------------------------------------------------------------
+Counters
+------------------------------------------------------------------- */
+
+.counter-item {
+    text-align: center;
+}
+
+.counter-number {
+    font-size: 36px;
+}
+
+.counter-title {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* ------------------------------------------------------------------
+Google map
+------------------------------------------------------------------- */
+
+#map-section {
+    position: relative;
+    height: 450px;
+    width: 100%;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#map img {
+    max-width: none;
+}
+
+.ajax-response {
+    text-align: center;
+}

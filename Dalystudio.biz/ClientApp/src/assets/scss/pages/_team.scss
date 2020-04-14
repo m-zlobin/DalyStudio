@@ -1,0 +1,68 @@
+.team-item {
+    position: relative;
+    text-align: center;
+}
+
+.team-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-image img {
+    width: 100%;
+}
+
+.team-image:after {
+    position: absolute;
+    background: transparent;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.team-detail {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 50%;
+    opacity: 0;
+    z-index: 2;
+    padding: 20px;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+.team-detail h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.team-descr {
+    margin: 20px 0 0;
+}
+
+.team-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000;
+}
+
+.team-role {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* Team member hover */
+
+.team-item:hover .team-image:after {
+    background: rgba(255, 255, 255, .9);
+}
+
+.team-item:hover .team-detail {
+    opacity: 1;
+}

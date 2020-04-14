@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Sitemap";
+}
+
+@section metatags{
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@ViewData["Title"]" />
+    <meta property="og:description" content="@ViewData["Description"]" />
+    <meta property="og:url" content="@($"https://{Context.Request.Host}{Url.RouteUrl("Sitemap")}")" />
+    <meta property="og:image" content="@($"https://{Context.Request.Host}/img/dalystudio.jpg")" />
+    <meta property="og:image:width" content="1250" />
+    <meta property="og:image:height" content="656" />
+
+    <meta name="description" content="Please check NordicSoft.net sitemap to find the page you need. Enjoy using quality article and content writing service right now." />
+}
+
+
+<section id="schedule">
+    <div class="container">
+        @await Html.PartialAsync("_Breadcrumbs")
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="h1">
+                    Sitemap
+                </h2>
+                <div class="u-h-4 u-w-50 bg-primary rounded mt-4 u-mb-70 mx-auto"></div>
+            </div>
+            <div class="col-12 box-shadow-v2 p-5">
+                <ul class="siteMap">
+                    <li>
+                        <a href="@Url.RouteUrl("HomeIndex")" title="Dalystudio.biz - Home">Dalystudio.biz - Home</a>
+                        <ul>
+                            <li><a href="@Url.RouteUrl("Portfolio")" title="Dalystudio.biz - Portfolio">Dalystudio.biz - Portfolio</a>
+                                <ul>
+                                    <li>
+                                        <a href="@Url.RouteUrl("Project1")" title="Dalystudio.biz - Wedding">Dalystudio.biz - Wedding</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.RouteUrl("Project2")" title="Dalystudio.biz - Love Story">Dalystudio.biz - Love Story</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.RouteUrl("Project3")" title="Dalystudio.biz - Fashion">Dalystudio.biz - Fashion</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.RouteUrl("Project4")" title="Dalystudio.biz - Family">Dalystudio.biz - Family</a>
+                                    </li>
+                                </ul>
+                                </li>
+                            <li><a href="@Url.RouteUrl("About")" title="Dalystudio.biz - About">Dalystudio.biz - About</a></li>
+                            <li><a href="@Url.RouteUrl("Contact")" title="Dalystudio.biz - Contact">Dalystudio.biz - Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

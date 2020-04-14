@@ -1,0 +1,26 @@
+.error-section {
+    background: #ECF5FE url(/img/error-404.jpg) center no-repeat;
+    background-size: cover;
+    height: 500px;
+    justify-content: flex-end;
+
+    img {
+        max-width: 30%;
+    }
+
+    @media only screen and (max-width : 992px) {
+        img {
+            max-width: 100%;
+            width: 400px;
+        }
+    }
+
+    @media only screen and (max-width : 769px) {
+        height: 400px;
+
+        img {
+            max-width: 100%;
+            width: 300px;
+        }
+    }
+}

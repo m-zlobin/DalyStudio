@@ -1,0 +1,80 @@
+﻿@using Dalystudio.biz.Services.GoogleRecaptcha
+@using Microsoft.Extensions.Options
+@inject IOptions<ReCaptchaClass> RecaptchaOptions
+@{
+    var textareaValue = string.Empty;
+    if (!string.IsNullOrEmpty(ViewBag.Category) && !string.IsNullOrEmpty(ViewBag.TypeOfService))
+    {
+        textareaValue = $"Category: {ViewBag.Category}, Type of service: {ViewBag.TypeOfService}.";
+
+    }
+    if (ViewBag.Category == "Enterprise")
+    {
+        textareaValue = $"Category: {ViewBag.Category}.";
+    }
+    var nameValue = !string.IsNullOrEmpty(ViewBag.Name) ? $"{ViewBag.Name}" : string.Empty;
+    var emailValue = !string.IsNullOrEmpty(ViewBag.Email) ? $"{ViewBag.Email}" : string.Empty;
+}
+
+
+
+
+<form id="contact-form" role="form" asp-controller="Common" asp-action="SendFeedback" method="POST">
+
+    <input type="hidden" name="g-recaptcha-response-token" />
+    <input type="hidden" name="g-recaptcha-action" />
+    <input type="hidden" name="g-recaptcha-site-key" value="@RecaptchaOptions.Value.SiteKey">
+
+    <div class="form-group">
+        <input type="text" tabindex="0" id="cname" name="cname" class="form-control" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" aria-label="your name">
+        <p class="help-block text-danger"></p>
+    </div>
+
+    <div class="form-group">
+        <input type="email" tabindex="0" id="cemail" name="cemail" class="form-control" placeholder="Your E-mail" required="" data-validation-required-message="Please enter your email address." aria-label="your email">
+        <p class="help-block text-danger"></p>
+    </div>
+
+    <div class="form-group">
+        <textarea class="form-control" tabindex="0" id="cmessage" name="cmessage" rows="7" placeholder="Message" required="" data-validation-required-message="Please enter your message." aria-label="your message"></textarea>
+        <p class="help-block text-danger"></p>
+    </div>
+    <div class=" text-right">
+        <button type="submit" class="btn btn-round btn-g" title="submit">Submit</button>
+    </div>
+</form>
+
+<script>
+    (function () {
+        var div = document.createElement('div');
+        div.setAttribute('id', 'recaptcha-badge');
+        div.setAttribute('class', 'lazyload');
+        div.setAttribute('data-site-key', '@RecaptchaOptions.Value.SiteKey');
+        document.getElementById("contact-form").appendChild(div);
+
+        document.addEventListener('lazybeforeunveil',
+            function(e) {
+                var siteKey = e.target.getAttribute('data-site-key');
+                if (siteKey) {
+                    var script = document.createElement('script');
+
+                    script.async = true;
+                                        script.src = 'https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoadCallback';
+
+                    document.body.appendChild(script);
+                }
+            });
+
+        window.onRecaptchaLoadCallback = function() {
+            var siteKey = document.getElementById("recaptcha-badge").getAttribute('data-site-key');
+
+            var clientId = grecaptcha.render('recaptcha-badge',
+                {
+                    'sitekey': siteKey,
+                    'size': 'invisible'
+                });
+                
+            document.getElementById("recaptcha-badge").setAttribute('data-widget-id', clientId);
+        }
+    })();
+</script>
