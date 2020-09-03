@@ -34,7 +34,7 @@
     "jquery": "^3.3.1",
     "jquery-bridget": "^2.0.1",
     "jquery-confirm": "^3.3.2",
-    "lazysizes": "^4.1.4",
+    "lazysizes": "^5.2.1",
     "mini-css-extract-plugin": "^0.4.5",
     "object-fit-images": "^3.2.4",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
